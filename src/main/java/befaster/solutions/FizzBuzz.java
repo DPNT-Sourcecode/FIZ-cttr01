@@ -15,6 +15,9 @@ public class FizzBuzz {
         }
 
         if(number > 10 && hasSameDigits(number)) {
+            if(number % 2 != 0) {
+                result += " fake";
+            }
             result += " deluxe";
         }
 
@@ -32,8 +35,8 @@ public class FizzBuzz {
 
 
     public static void main(String[] args) {
-        for(int i=10; i<10000; i++) {
-            int nb = 3 * 2 * i;
+        for(int i=10; i<1000000; i++) {
+            int nb = 5 * 3 * 2 * i;
             if(hasSameDigits(nb)) {
                 System.out.println(nb);
                 break;

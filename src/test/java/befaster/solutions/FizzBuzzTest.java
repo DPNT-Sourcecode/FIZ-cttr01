@@ -28,13 +28,14 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.fizzBuzz(5555), equalTo("buzz fake deluxe"));
         assertThat(FizzBuzz.fizzBuzz(555), equalTo("fizz buzz fake deluxe"));
 
-        assertThat(FizzBuzz.fizzBuzz(2222), equalTo("deluxe"));
-        assertThat(FizzBuzz.fizzBuzz(33), equalTo("fizz deluxe"));
+
 
 //        - If a "deluxe" number is odd, we should call him "fake deluxe"
 //                - A number cannot be both "deluxe" and "fake deluxe" at the same time
 //        - All the previous rules are still valid
 
 
+        assertThat(FizzBuzz.fizzBuzz(2222), equalTo("deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(66), equalTo("fizz deluxe"));
     }
 }
