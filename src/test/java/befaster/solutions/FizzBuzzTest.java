@@ -10,9 +10,9 @@ public class FizzBuzzTest {
 
     @Test
     public void test_fizz_buzz() {
-        assertThat(FizzBuzz.fizzBuzz(3), equalTo("fizz"));
-        assertThat(FizzBuzz.fizzBuzz(5), equalTo("buzz"));
-        assertThat(FizzBuzz.fizzBuzz(15), equalTo("fizz buzz"));
+        assertThat(FizzBuzz.fizzBuzz(12), equalTo("fizz"));
+        assertThat(FizzBuzz.fizzBuzz(10), equalTo("buzz"));
+        assertThat(FizzBuzz.fizzBuzz(60), equalTo("fizz buzz"));
         assertThat(FizzBuzz.fizzBuzz(16), equalTo("16"));
 
         assertThat(FizzBuzz.fizzBuzz(137), equalTo("fizz"));
@@ -47,15 +47,15 @@ public class FizzBuzzTest {
 //                - All the previous rules for "fizz" and "buzz" are still valid
 
 
-        assertThat(FizzBuzz.fizzBuzz(330), equalTo("fizz deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(330), equalTo("fizz buzz deluxe"));
         assertThat(FizzBuzz.fizzBuzz(66), equalTo("fizz"));
         assertThat(FizzBuzz.fizzBuzz(50), equalTo("buzz deluxe"));
         assertThat(FizzBuzz.fizzBuzz(10), equalTo("buzz"));
         assertThat(FizzBuzz.fizzBuzz(14934450), equalTo("fizz buzz deluxe"));
 
 
-        assertThat(FizzBuzz.fizzBuzz(333), equalTo("fake fizz deluxe"));
-        assertThat(FizzBuzz.fizzBuzz(55), equalTo("fake buzz deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(333), equalTo("fizz fake deluxe"));
+        assertThat(FizzBuzz.fizzBuzz(55), equalTo("buzz fake deluxe"));
         assertThat(FizzBuzz.fizzBuzz(135), equalTo("fizz buzz fake deluxe"));
 
 
