@@ -34,12 +34,20 @@ public class FizzBuzz {
     }
 
 
+    public static boolean isFizzDeluxe(Integer x) {
+        return x % 3 == 0 && x.toString().contains("3");
+    }
+
+    public static boolean isBuzzDeluxe(Integer x) {
+        return x % 5 == 0 && x.toString().contains("5");
+    }
+
+
     public static void main(String[] args) {
-        for(int i=10; i<1000000; i++) {
-            int nb = 5 * 3 * 2 * i;
-            if(hasSameDigits(nb)) {
+        for(int i=1; i<1000000; i++) {
+            int nb = 5 * 3 * i;
+            if(isFizzDeluxe(nb) && isBuzzDeluxe(nb)) {
                 System.out.println(nb);
-                break;
             }
         }
     }
