@@ -14,10 +14,13 @@ public class FizzBuzz {
             result += " buzz";
         }
 
-        if(number > 10 && hasSameDigits(number)) {
+        boolean fizzDeluxe = isFizzDeluxe(number);
+        boolean buzzDeluxe = isBuzzDeluxe(number);
+        if(fizzDeluxe || buzzDeluxe) {
             if(number % 2 != 0) {
                 result += " fake";
             }
+
             result += " deluxe";
         }
 
