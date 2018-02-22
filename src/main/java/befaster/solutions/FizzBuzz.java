@@ -6,11 +6,11 @@ public class FizzBuzz {
 
     public static String fizzBuzz(Integer number) {
         String result = "";
-        if(number % 3 == 0) {
+        if(number % 3 == 0 || number.toString().contains("3")) {
             result += "fizz";
         }
 
-        if(number % 5 == 0) {
+        if(number % 5 == 0 || number.toString().contains("5")) {
             result += " buzz";
         }
 
