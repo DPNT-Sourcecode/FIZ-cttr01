@@ -32,9 +32,10 @@ public class FizzBuzz {
 
 
     public static void main(String[] args) {
-        for(int i=1; i<1000; i++) {
-            if(hasSameDigits(15 * i)) {
-                System.out.println(15*i);
+        for(int i=10; i<10000; i++) {
+            int nb = 3 * 2 * i;
+            if(hasSameDigits(nb)) {
+                System.out.println(nb);
                 break;
             }
         }
